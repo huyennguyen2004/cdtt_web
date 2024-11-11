@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-link
+{
+    @apply text-blue-500 hover:text-blue-700 font-semibold; 
+    padding: 0.5rem 1rem; 
+    border-radius: 0.25rem; 
+}
+.carousel-image {
+    height: 400px;
+    object-fit: cover; 
+  }
+  
+  .card-image {
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
