@@ -1,0 +1,18 @@
+ public function show($id)
+    {
+        $productsale = ProductSale::where('id', $id)->first();
+
+        if ($productsale === null) {
+            return response()->json([
+                'status' => false,
+                'message' => 'Không tìm thấy sản phẩm',
+                'productsale' => null
+            ]);
+        }
+
+        return response()->json([
+            'status' => true,
+            'message' => 'Tải dữ liệu thành công',
+            'productsale' => $productsale
+        ]);
+    }
